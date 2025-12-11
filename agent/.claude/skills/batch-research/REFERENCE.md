@@ -23,3 +23,4 @@
 ## KOL & Influencers
 
 - https://baoyu.io/ 行业大佬，必须关注！
+- https://www.bensbites.com/ Ben Tossell 的个人博客，洞察 AI 趋势。
