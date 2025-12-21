@@ -26,14 +26,21 @@ export async function GET() {
   weeks.forEach((week) => {
     feed.item({
       title: week.title,
-      description: `
-        ${renderMarkdown(week.content)}
-        ${process.env.NEXT_TRACKING_IMAGE ? `<img src="${process.env.NEXT_TRACKING_IMAGE}/${week.slug}" alt="${week.title}" width="1" height="1" loading="lazy" aria-hidden="true" style="opacity: 0;pointer-events: none;" />` : ''}
-      `,
       url: `${baseUrl}/weekly/${week.slug}`,
       guid: `${baseUrl}/weekly/${week.slug}`,
       date: new Date(week.publishDate),
       author: siteConfig.authors[0].name,
+      description: week.summary,
+      custom_elements: [
+        {
+          'content:encoded': {
+            _cdata: `
+              ${renderMarkdown(week.content)}
+              ${process.env.NEXT_TRACKING_IMAGE ? `<img src="${process.env.NEXT_TRACKING_IMAGE}/${week.slug}" alt="${week.title}" width="1" height="1" loading="lazy" aria-hidden="true" style="opacity: 0;pointer-events: none;" />` : ''}
+            `,
+          },
+        },
+      ],
     })
   })
 
